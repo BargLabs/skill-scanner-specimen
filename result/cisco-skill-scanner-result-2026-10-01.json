@@ -1,0 +1,1749 @@
+{
+  "baseFindings": [
+    {
+      "basePath": "project-management/skills/senior-pm",
+      "caseId": "b02",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "engineering-team/playwright-pro/skills/pw-review",
+      "caseId": "b04",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "engineering-team/skills/senior-data-engineer",
+      "caseId": "b05",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        },
+        {
+          "analyzer": "static",
+          "category": "obfuscation",
+          "celDecision": null,
+          "file_path": "references/troubleshooting.md",
+          "line_number": null,
+          "rule_id": "FILE_MAGIC_MISMATCH",
+          "severity": "MEDIUM",
+          "snippet": null,
+          "title": "File extension does not match actual content type"
+        },
+        {
+          "analyzer": "static",
+          "category": "command_injection",
+          "celDecision": null,
+          "file_path": "scripts/pipeline_orchestrator.py",
+          "line_number": 339,
+          "rule_id": "COMMAND_INJECTION_EVAL",
+          "severity": "CRITICAL",
+          "snippet": "compile(code, '<string>', 'exec')",
+          "title": "Dangerous code execution functions that can execute arbitrary code"
+        },
+        {
+          "analyzer": "static",
+          "category": "command_injection",
+          "celDecision": null,
+          "file_path": "scripts/pipeline_orchestrator.py",
+          "line_number": 452,
+          "rule_id": "COMMAND_INJECTION_EVAL",
+          "severity": "CRITICAL",
+          "snippet": "compile(code, '<string>', 'exec')",
+          "title": "Dangerous code execution functions that can execute arbitrary code"
+        },
+        {
+          "analyzer": "static",
+          "category": "command_injection",
+          "celDecision": null,
+          "file_path": "scripts/pipeline_orchestrator.py",
+          "line_number": 579,
+          "rule_id": "COMMAND_INJECTION_EVAL",
+          "severity": "CRITICAL",
+          "snippet": "compile(code, '<string>', 'exec')",
+          "title": "Dangerous code execution functions that can execute arbitrary code"
+        },
+        {
+          "analyzer": "static",
+          "category": "command_injection",
+          "celDecision": null,
+          "file_path": "scripts/pipeline_orchestrator.py",
+          "line_number": 676,
+          "rule_id": "SQL_INJECTION_STRING_FORMAT",
+          "severity": "CRITICAL",
+          "snippet": "'sql': f\"SELECT MAX(updated_at) FROM {table} WHERE updated_at > '{{{{ ds }}}}'\"",
+          "title": "SQL query with f-string variables (SQL injection risk)"
+        }
+      ]
+    },
+    {
+      "basePath": "engineering-team/skills/embedded-iot-mentor",
+      "caseId": "b07",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "engineering/skills/pr-review-expert",
+      "caseId": "b09",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "engineering/skills/focused-fix",
+      "caseId": "b12",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "engineering/skills/full-page-screenshot",
+      "caseId": "b13",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        },
+        {
+          "analyzer": "static",
+          "category": "data_exfiltration",
+          "celDecision": null,
+          "file_path": "scripts/full-page-screenshot.mjs",
+          "line_number": 85,
+          "rule_id": "DATA_EXFIL_JS_FS_ACCESS",
+          "severity": "LOW",
+          "snippet": "const lines = fs.readFileSync(p, 'utf-8').trim().split('\\n');",
+          "title": "Node.js filesystem access candidate for sensitive-flow correlation"
+        },
+        {
+          "analyzer": "static",
+          "category": "data_exfiltration",
+          "celDecision": null,
+          "file_path": "scripts/full-page-screenshot.mjs",
+          "line_number": 405,
+          "rule_id": "DATA_EXFIL_JS_FS_ACCESS",
+          "severity": "LOW",
+          "snippet": "fs.writeFileSync(outputFile, buf);",
+          "title": "Node.js filesystem access candidate for sensitive-flow correlation"
+        },
+        {
+          "analyzer": "static",
+          "category": "data_exfiltration",
+          "celDecision": null,
+          "file_path": "scripts/full-page-screenshot.mjs",
+          "line_number": 424,
+          "rule_id": "DATA_EXFIL_JS_FS_ACCESS",
+          "severity": "LOW",
+          "snippet": "fs.writeFileSync(tilePath, Buffer.from(shot.result.data, 'base64'));",
+          "title": "Node.js filesystem access candidate for sensitive-flow correlation"
+        },
+        {
+          "analyzer": "static",
+          "category": "data_exfiltration",
+          "celDecision": null,
+          "file_path": "scripts/full-page-screenshot.mjs",
+          "line_number": 443,
+          "rule_id": "DATA_EXFIL_JS_FS_ACCESS",
+          "severity": "LOW",
+          "snippet": "fs.writeFileSync(stitchScriptPath, stitchScript);",
+          "title": "Node.js filesystem access candidate for sensitive-flow correlation"
+        },
+        {
+          "analyzer": "static",
+          "category": "command_injection",
+          "celDecision": null,
+          "file_path": "scripts/full-page-screenshot.mjs",
+          "line_number": 445,
+          "rule_id": "COMMAND_INJECTION_JS_CHILD_PROCESS",
+          "severity": "CRITICAL",
+          "snippet": "const result = execSync(`python3 \"${stitchScriptPath}\"`, { encoding: 'utf-8', timeout: 60000 });",
+          "title": "Node.js child_process module usage for shell command execution"
+        },
+        {
+          "analyzer": "static",
+          "category": "data_exfiltration",
+          "celDecision": null,
+          "file_path": "scripts/full-page-screenshot.mjs",
+          "line_number": 513,
+          "rule_id": "DATA_EXFIL_JS_NETWORK",
+          "severity": "MEDIUM",
+          "snippet": "const resp = await fetch(`${PROXY_URL}/targets`, { signal: AbortSignal.timeout(10000) });",
+          "title": "Outbound network request primitives in JavaScript/TypeScript"
+        },
+        {
+          "analyzer": "static",
+          "category": "data_exfiltration",
+          "celDecision": null,
+          "file_path": "scripts/full-page-screenshot.mjs",
+          "line_number": 585,
+          "rule_id": "DATA_EXFIL_JS_NETWORK",
+          "severity": "MEDIUM",
+          "snippet": "const newResp = await fetch(`${PROXY_URL}/new?url=${encodeURIComponent(url)}`, {",
+          "title": "Outbound network request primitives in JavaScript/TypeScript"
+        },
+        {
+          "analyzer": "static",
+          "category": "data_exfiltration",
+          "celDecision": null,
+          "file_path": "scripts/full-page-screenshot.mjs",
+          "line_number": 609,
+          "rule_id": "DATA_EXFIL_JS_NETWORK",
+          "severity": "MEDIUM",
+          "snippet": "try { await fetch(`${PROXY_URL}/close?target=${targetId}`, { signal: AbortSignal.timeout(5000) }); } catch {}",
+          "title": "Outbound network request primitives in JavaScript/TypeScript"
+        },
+        {
+          "analyzer": "static",
+          "category": "data_exfiltration",
+          "celDecision": null,
+          "file_path": "scripts/full-page-screenshot.mjs",
+          "line_number": 619,
+          "rule_id": "DATA_EXFIL_JS_NETWORK",
+          "severity": "MEDIUM",
+          "snippet": "const resp = await fetch(`${PROXY_URL}/health`, { signal: AbortSignal.timeout(1000) });",
+          "title": "Outbound network request primitives in JavaScript/TypeScript"
+        },
+        {
+          "analyzer": "static",
+          "category": "data_exfiltration",
+          "celDecision": null,
+          "file_path": "scripts/full-page-screenshot.mjs",
+          "line_number": 626,
+          "rule_id": "DATA_EXFIL_JS_NETWORK",
+          "severity": "MEDIUM",
+          "snippet": "const resp = await fetch(`${PROXY_URL}/eval?target=${targetId}`, {",
+          "title": "Outbound network request primitives in JavaScript/TypeScript"
+        },
+        {
+          "analyzer": "static",
+          "category": "data_exfiltration",
+          "celDecision": null,
+          "file_path": "scripts/full-page-screenshot.mjs",
+          "line_number": 633,
+          "rule_id": "DATA_EXFIL_JS_NETWORK",
+          "severity": "MEDIUM",
+          "snippet": "const resp = await fetch(`${PROXY_URL}/screenshot?target=${targetId}&file=${encodeURIComponent(filePath)}`, {",
+          "title": "Outbound network request primitives in JavaScript/TypeScript"
+        },
+        {
+          "analyzer": "static",
+          "category": "data_exfiltration",
+          "celDecision": null,
+          "file_path": "scripts/full-page-screenshot.mjs",
+          "line_number": 640,
+          "rule_id": "DATA_EXFIL_JS_NETWORK",
+          "severity": "MEDIUM",
+          "snippet": "await fetch(`${PROXY_URL}/scroll?target=${targetId}&y=${y}`, {",
+          "title": "Outbound network request primitives in JavaScript/TypeScript"
+        },
+        {
+          "analyzer": "static",
+          "category": "command_injection",
+          "celDecision": null,
+          "file_path": "scripts/full-page-screenshot.mjs",
+          "line_number": 774,
+          "rule_id": "COMMAND_INJECTION_JS_CHILD_PROCESS",
+          "severity": "CRITICAL",
+          "snippet": "const sipsOut = execSync(`sips -g pixelWidth -g pixelHeight \"${tiles[0].path}\"`, { encoding: 'utf-8' });",
+          "title": "Node.js child_process module usage for shell command execution"
+        },
+        {
+          "analyzer": "static",
+          "category": "data_exfiltration",
+          "celDecision": null,
+          "file_path": "scripts/full-page-screenshot.mjs",
+          "line_number": 834,
+          "rule_id": "DATA_EXFIL_JS_FS_ACCESS",
+          "severity": "LOW",
+          "snippet": "fs.writeFileSync(stitchScriptPath, stitchLines.join('\\n'));",
+          "title": "Node.js filesystem access candidate for sensitive-flow correlation"
+        },
+        {
+          "analyzer": "static",
+          "category": "command_injection",
+          "celDecision": null,
+          "file_path": "scripts/full-page-screenshot.mjs",
+          "line_number": 836,
+          "rule_id": "COMMAND_INJECTION_JS_CHILD_PROCESS",
+          "severity": "CRITICAL",
+          "snippet": "const result = execSync(`python3 \"${stitchScriptPath}\"`, { encoding: 'utf-8', timeout: 60000 });",
+          "title": "Node.js child_process module usage for shell command execution"
+        }
+      ]
+    },
+    {
+      "basePath": "product-team/agile-product-owner/skills/agile-product-owner",
+      "caseId": "b14",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "c-level-agents/skills/cco-review",
+      "caseId": "b15",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "engineering-team/skills/security-pen-testing",
+      "caseId": "b16",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "engineering/skills/ship-gate",
+      "caseId": "b18",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "command_injection",
+          "celDecision": null,
+          "file_path": "scripts/ship_gate_scanner.py",
+          "line_number": 308,
+          "rule_id": "COMMAND_INJECTION_EVAL",
+          "severity": "CRITICAL",
+          "snippet": "\"SEC-13\": CheckDef(\"SEC-13\", \"No eval() or dangerouslySetInnerHTML without sanitization\", Severity.HIGH, \"SEC\", stack=\"js\"),  # noqa: SEC-AUDITOR",
+          "title": "Dangerous code execution functions that can execute arbitrary code"
+        },
+        {
+          "analyzer": "static",
+          "category": "command_injection",
+          "celDecision": null,
+          "file_path": "scripts/ship_gate_scanner.py",
+          "line_number": 500,
+          "rule_id": "COMMAND_INJECTION_EVAL",
+          "severity": "CRITICAL",
+          "snippet": "return Result(c, Status.FAIL, \"Unsafe eval() or unsanitized dangerouslySetInnerHTML\", all_findings)  # noqa: SEC-AUDITOR",
+          "title": "Dangerous code execution functions that can execute arbitrary code"
+        }
+      ]
+    },
+    {
+      "basePath": "engineering/agenthub/skills/eval",
+      "caseId": "b19",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "compliance-os/skills/fda-qsr-audit-prep",
+      "caseId": "b21",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "engineering-team/skills/ms365-tenant-manager",
+      "caseId": "b24",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "productivity/swedish-mentor",
+      "caseId": "b25",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "business-growth/skills/contract-and-proposal-writer",
+      "caseId": "b28",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "compliance-os/skills/soc2-audit-prep",
+      "caseId": "b32",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "c-level-agents/skills/cdo-review",
+      "caseId": "b33",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "product-team/skills/product-analytics",
+      "caseId": "b34",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "engineering-team/playwright-pro/skills/testrail",
+      "caseId": "b37",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "engineering/skills/browser-automation",
+      "caseId": "b41",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "engineering/skills/mcp-server-builder",
+      "caseId": "b43",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        },
+        {
+          "analyzer": "pipeline",
+          "category": "data_exfiltration",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": 1,
+          "rule_id": "PIPELINE_TAINT_FLOW",
+          "severity": "MEDIUM",
+          "snippet": "cat openapi.json | python3 scripts/openapi_to_mcp.py --server-name billing-mcp --language typescript",
+          "title": "Dangerous data flow in command pipeline"
+        }
+      ]
+    },
+    {
+      "basePath": "engineering/agenthub/skills/agenthub",
+      "caseId": "b46",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "command_injection",
+          "celDecision": null,
+          "file_path": "scripts/board_manager.py",
+          "line_number": 100,
+          "rule_id": "PATH_TRAVERSAL_OPEN",
+          "severity": "CRITICAL",
+          "snippet": "filepath = os.path.join(ch_path, fname)",
+          "title": "Path traversal vulnerability - user-controlled file path"
+        },
+        {
+          "analyzer": "static",
+          "category": "command_injection",
+          "celDecision": null,
+          "file_path": "scripts/board_manager.py",
+          "line_number": 157,
+          "rule_id": "PATH_TRAVERSAL_OPEN",
+          "severity": "CRITICAL",
+          "snippet": "filepath = os.path.join(ch_path, filename)",
+          "title": "Path traversal vulnerability - user-controlled file path"
+        },
+        {
+          "analyzer": "static",
+          "category": "command_injection",
+          "celDecision": null,
+          "file_path": "scripts/result_ranker.py",
+          "line_number": 84,
+          "rule_id": "COMMAND_INJECTION_SHELL_TRUE",
+          "severity": "HIGH",
+          "snippet": "result = subprocess.run(",
+          "title": "Shell command execution with shell=True enabled"
+        }
+      ]
+    },
+    {
+      "basePath": "c-level-agents/skills/cmo-review",
+      "caseId": "b47",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "engineering-team/skills/named-persona-adversarial-review",
+      "caseId": "b50",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "marketing-skill/skills/app-store-optimization",
+      "caseId": "b51",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "engineering/skills/monorepo-navigator",
+      "caseId": "b55",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "c-level-agents/skills/gc-review",
+      "caseId": "b56",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "engineering/minimalist",
+      "caseId": "b57",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "product-team/skills/saas-scaffolder",
+      "caseId": "b58",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "engineering-team/skills/senior-backend",
+      "caseId": "b60",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "unauthorized_tool_use",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "TOOL_ABUSE_UNDECLARED_NETWORK",
+          "severity": "MEDIUM",
+          "snippet": null,
+          "title": "Undeclared network usage"
+        },
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "engineering/skills/spec-driven-workflow",
+      "caseId": "b62",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "engineering/skills/changelog-generator",
+      "caseId": "b64",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        },
+        {
+          "analyzer": "pipeline",
+          "category": "data_exfiltration",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": 2,
+          "rule_id": "PIPELINE_TAINT_FLOW",
+          "severity": "MEDIUM",
+          "snippet": "cat commits.txt | python3 scripts/commit_linter.py --format json",
+          "title": "Dangerous data flow in command pipeline"
+        }
+      ]
+    },
+    {
+      "basePath": "engineering/agenthub/skills/hub-status",
+      "caseId": "b67",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "product-team/skills/roadmap-communicator",
+      "caseId": "b69",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "product-team/skills/ux-researcher-designer",
+      "caseId": "b70",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "engineering/human-gate/skills/human-gate",
+      "caseId": "b71",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "command_injection",
+          "celDecision": null,
+          "file_path": "scripts/review_page_builder.py",
+          "line_number": 69,
+          "rule_id": "YARA_script_injection_generic",
+          "severity": "CRITICAL",
+          "snippet": "SAMPLE_HTML = \"\"\"<!DOCTYPE html>",
+          "title": "INJECTION ATTACK detected by YARA"
+        },
+        {
+          "analyzer": "static",
+          "category": "command_injection",
+          "celDecision": null,
+          "file_path": "scripts/review_page_builder.py",
+          "line_number": 70,
+          "rule_id": "YARA_script_injection_generic",
+          "severity": "CRITICAL",
+          "snippet": "<html><head>",
+          "title": "INJECTION ATTACK detected by YARA"
+        },
+        {
+          "analyzer": "static",
+          "category": "command_injection",
+          "celDecision": null,
+          "file_path": "scripts/review_page_builder.py",
+          "line_number": 82,
+          "rule_id": "YARA_script_injection_generic",
+          "severity": "CRITICAL",
+          "snippet": "purpose, while <a href=\"javascript:alert(1)\">this</a> does not.</p>",
+          "title": "INJECTION ATTACK detected by YARA"
+        },
+        {
+          "analyzer": "static",
+          "category": "command_injection",
+          "celDecision": null,
+          "file_path": "scripts/review_page_builder.py",
+          "line_number": 370,
+          "rule_id": "YARA_script_injection_generic",
+          "severity": "CRITICAL",
+          "snippet": "# <html> would push every real block to depth 1, and nothing would",
+          "title": "INJECTION ATTACK detected by YARA"
+        },
+        {
+          "analyzer": "static",
+          "category": "command_injection",
+          "celDecision": null,
+          "file_path": "scripts/review_page_builder.py",
+          "line_number": 470,
+          "rule_id": "YARA_script_injection_generic",
+          "severity": "CRITICAL",
+          "snippet": "PAGE = \"\"\"<!doctype html>",
+          "title": "INJECTION ATTACK detected by YARA"
+        },
+        {
+          "analyzer": "static",
+          "category": "command_injection",
+          "celDecision": null,
+          "file_path": "scripts/review_page_builder.py",
+          "line_number": 471,
+          "rule_id": "YARA_script_injection_generic",
+          "severity": "CRITICAL",
+          "snippet": "<html lang=\"en\">",
+          "title": "INJECTION ATTACK detected by YARA"
+        }
+      ]
+    },
+    {
+      "basePath": "ra-qm-team/skills/agent-decision-receipts",
+      "caseId": "b73",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "engineering/skills/agent-designer",
+      "caseId": "b74",
+      "findings": [
+        {
+          "analyzer": "static",
+          "category": "social_engineering",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "SOCIAL_ENG_ANTHROPIC_IMPERSONATION",
+          "severity": "MEDIUM",
+          "snippet": null,
+          "title": "Potential Anthropic brand impersonation"
+        },
+        {
+          "analyzer": "static",
+          "category": "policy_violation",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": null,
+          "rule_id": "MANIFEST_MISSING_LICENSE",
+          "severity": "INFO",
+          "snippet": null,
+          "title": "Skill does not specify a license"
+        }
+      ]
+    },
+    {
+      "basePath": "product-team/research-summarizer/skills/research-summarizer",
+      "caseId": "b77",
+      "findings": [
+        {
+          "analyzer": "pipeline",
+          "category": "data_exfiltration",
+          "celDecision": null,
+          "file_path": "SKILL.md",
+          "line_number": 11,
+          "rule_id": "PIPELINE_TAINT_FLOW",
+          "severity": "MEDIUM",
+          "snippet": "cat paper.txt | python3 scripts/extract_citations.py --stdin",
+          "title": "Dangerous data flow in command pipeline"
+        }
+      ]
+    }
+  ],
+  "caseCount": 480,
+  "celWouldSuppressOnlyDetections": {
+    "obfuscated_shell": 0,
+    "pipe_shell": 0,
+    "prompt_injection": 0,
+    "prose_exfil": 0,
+    "remote_content": 0
+  },
+  "cells": {
+    "base": {
+      "errors": 0,
+      "interval": {
+        "lower": 0.02698937567084199,
+        "upper": 0.13810148767274422
+      },
+      "n": 80,
+      "name": "base",
+      "numerator": 5,
+      "rate": 0.0625,
+      "refused": null
+    },
+    "obfuscated_shell": {
+      "errors": 0,
+      "interval": {
+        "lower": 0.9541818704644728,
+        "upper": 0.9999999999999999
+      },
+      "n": 80,
+      "name": "obfuscated_shell",
+      "numerator": 80,
+      "rate": 1,
+      "refused": null
+    },
+    "pipe_shell": {
+      "errors": 0,
+      "interval": {
+        "lower": 0.9541818704644728,
+        "upper": 0.9999999999999999
+      },
+      "n": 80,
+      "name": "pipe_shell",
+      "numerator": 80,
+      "rate": 1,
+      "refused": null
+    },
+    "pooled_package_visible": {
+      "errors": 0,
+      "interval": {
+        "lower": 0.6997803683357158,
+        "upper": 0.7942885522486294
+      },
+      "n": 320,
+      "name": "pooled_package_visible",
+      "numerator": 240,
+      "rate": 0.75,
+      "refused": null
+    },
+    "prompt_injection": {
+      "errors": 0,
+      "interval": {
+        "lower": 0.9541818704644728,
+        "upper": 0.9999999999999999
+      },
+      "n": 80,
+      "name": "prompt_injection",
+      "numerator": 80,
+      "rate": 1,
+      "refused": null
+    },
+    "prose_exfil": {
+      "errors": 0,
+      "interval": {
+        "lower": 0,
+        "upper": 0.0458181295355271
+      },
+      "n": 80,
+      "name": "prose_exfil",
+      "numerator": 0,
+      "rate": 0,
+      "refused": null
+    },
+    "remote_content": {
+      "errors": 0,
+      "interval": {
+        "lower": 0,
+        "upper": 0.0458181295355271
+      },
+      "n": 80,
+      "name": "remote_content",
+      "numerator": 0,
+      "rate": 0,
+      "refused": null
+    }
+  },
+  "cisco": {
+    "coreCelRecall": 0.3143,
+    "coreOnlyRecall": 0.1988,
+    "readmeLines": "47-49",
+    "readmePath": "README.md"
+  },
+  "corpus": {
+    "baseCommit": "19392f7a08264ed00486a251f5b2098321771f94",
+    "baseRepository": "https://github.com/alirezarezvani/claude-skills",
+    "corpusDigest": "40b18ec8a386c6e7fad8c8adc6ce33ab90c0d955b603704dc1b7bf828b752a9d",
+    "counts": {
+      "bases": 80,
+      "cases": 480,
+      "variants": 400
+    },
+    "seed": "cisco-skill-scanner-specimen-2026-10-01",
+    "selection": {
+      "candidateCount": 846,
+      "eligibleCount": 386,
+      "excludedCounts": {
+        "hidden_path": 0,
+        "nested_skill": 2,
+        "symlinked_skill_md": 458,
+        "unreproducible_entry": 0
+      },
+      "selected": [
+        {
+          "orderKey": "0125c2e84a93055a7929494da1b80fae19dd94e632b25d348af4c0fc5e268a91",
+          "path": "productivity/email/skills/inbox-setup",
+          "rank": 1
+        },
+        {
+          "orderKey": "020ab3f4b566532dcb8b9d6d8c1f3ef2363f7f9e959c79ace13a737f478ed41f",
+          "path": "project-management/skills/senior-pm",
+          "rank": 2
+        },
+        {
+          "orderKey": "023f16a002972a6463d80bc00ed18ea3b5f603032905f2a4ebc1a89c687cebd1",
+          "path": "c-level-advisor/skills/c-level-skills",
+          "rank": 3
+        },
+        {
+          "orderKey": "0354bad7172e0e1b433760a2427e01aa308d50757793c816f195b54fdf2adc28",
+          "path": "engineering-team/playwright-pro/skills/pw-review",
+          "rank": 4
+        },
+        {
+          "orderKey": "03a130967bd22c607af4acf59241a8f74ed1d52ef594c464f0e2c6e9202ef0c0",
+          "path": "engineering-team/skills/senior-data-engineer",
+          "rank": 5
+        },
+        {
+          "orderKey": "043b30589278ec65123ca6b12c6da7c8f2cfdc393fde5ff58b151985b1316872",
+          "path": "c-level-advisor/skills/board-meeting",
+          "rank": 6
+        },
+        {
+          "orderKey": "04b0dee944a1fb42e1f229fd2cbdb484600b7b2f5594ab1365a9248045bf7c9d",
+          "path": "engineering-team/skills/embedded-iot-mentor",
+          "rank": 7
+        },
+        {
+          "orderKey": "05fcd158f7c1c5dd458bbb4b5e921e727c0e65ed42fced941c264026cccbe75a",
+          "path": "engineering/skills/chaos-engineering",
+          "rank": 8
+        },
+        {
+          "orderKey": "0628a293b05642f4e19e676b116a6ff26918a09e345d7e85e8bff67bbdcabf22",
+          "path": "engineering/skills/pr-review-expert",
+          "rank": 9
+        },
+        {
+          "orderKey": "066a0fc29ab30b6e49817ed613dc4e39e8404fcee8a2646df5f44ce93e84f2c7",
+          "path": "productivity/email/skills/inbox-triage",
+          "rank": 10
+        },
+        {
+          "orderKey": "067960a71b8dfe9ee11ed428671eb5211b37c5a7637020c069a02b8ff3e789e3",
+          "path": "engineering/handoff/skills/handoff",
+          "rank": 11
+        },
+        {
+          "orderKey": "090bf1ffe1a5e4b5ccb7f51417efca3b460dc3dc574ec0775886f92185d05d32",
+          "path": "engineering/skills/focused-fix",
+          "rank": 12
+        },
+        {
+          "orderKey": "0b02b7f60dfec2ae708d80e374ceecbc727caad5fb888ef2cd9a4ab196e3c0ea",
+          "path": "engineering/skills/full-page-screenshot",
+          "rank": 13
+        },
+        {
+          "orderKey": "0bd526e49faf0db2060e7034648496be32c41e0e078ad0453fab9d9222bb6a0e",
+          "path": "product-team/agile-product-owner/skills/agile-product-owner",
+          "rank": 14
+        },
+        {
+          "orderKey": "0e5c52a3595607a8ea242fa4fb90c50845016c6874068e820b0d3bfa2694ac32",
+          "path": "c-level-agents/skills/cco-review",
+          "rank": 15
+        },
+        {
+          "orderKey": "0f710bb584af179466ccdca310becbc73a195587b15140d483d2d8b82e74c942",
+          "path": "engineering-team/skills/security-pen-testing",
+          "rank": 16
+        },
+        {
+          "orderKey": "0fad7e8b61cbfbae2bbc743ae92c039aa66e09c43d407af3abe57f1f161809fe",
+          "path": "commercial/skills/rfp-responder",
+          "rank": 17
+        },
+        {
+          "orderKey": "1131610a872672fba86e05e6e11ddc37e0a7ae6427d7dae1fe608edf005c9ab3",
+          "path": "engineering/skills/ship-gate",
+          "rank": 18
+        },
+        {
+          "orderKey": "1203a7d9c8717dfc94e4ad414f9cecc1100e56fc3f9fea514833c7814ede0cc0",
+          "path": "engineering/agenthub/skills/eval",
+          "rank": 19
+        },
+        {
+          "orderKey": "1239fe522c4eb1c9e929e68d7771310f084519eb482d4aedd9776829e8d6ce25",
+          "path": "engineering/claude-coach/skills/claude-coach",
+          "rank": 20
+        },
+        {
+          "orderKey": "126cdb6f63427250d308592a408daf8b94be858eb1be64474b5079ff18aa8d30",
+          "path": "compliance-os/skills/fda-qsr-audit-prep",
+          "rank": 21
+        },
+        {
+          "orderKey": "1285a3fa672d29864b53e5a5794686de207ce4a3a2b6b02db61004224cccd00f",
+          "path": "markdown-html/skills/md-document",
+          "rank": 22
+        },
+        {
+          "orderKey": "151c308315234f5fa595169447042defa62c00d39d698d089c8621f71c7f4b82",
+          "path": "ra-qm-team/skills/iso42001-specialist",
+          "rank": 23
+        },
+        {
+          "orderKey": "155b40293b32a0270d75619ae7bbec2938246ea9fdba4327d059173db7658c74",
+          "path": "engineering-team/skills/ms365-tenant-manager",
+          "rank": 24
+        },
+        {
+          "orderKey": "15d0e8d0d710bd4855a8d0ecbe31a38db315620801f7ac5deee1ad6677b716b1",
+          "path": "productivity/swedish-mentor",
+          "rank": 25
+        },
+        {
+          "orderKey": "15e551432af28df471102a0f0a977a74b076d091004606bd41544c9f5bdc4483",
+          "path": "markdown-html/skills/design-system",
+          "rank": 26
+        },
+        {
+          "orderKey": "163ef136702585676bfa650bc38934a62e453ab555a6af1f890c976da3c87c75",
+          "path": "ra-qm-team/compliance-team-iso42001/skills/iso42001-specialist",
+          "rank": 27
+        },
+        {
+          "orderKey": "1685fae00c3a080de7bbb4432d388950e3bac2fc47326536054269cff33ca7ec",
+          "path": "business-growth/skills/contract-and-proposal-writer",
+          "rank": 28
+        },
+        {
+          "orderKey": "16db5cd2c0c6bafe690930d12b36542b7096dfa77b797c40e801dd8ff9787a8a",
+          "path": "marketing-skill/skills/form-cro",
+          "rank": 29
+        },
+        {
+          "orderKey": "171052b6c165e8493635688d48654cba7d0eb79ead8cf1ce6349ffb7b29624f2",
+          "path": "ra-qm-team/compliance-team-eu-ai-act/skills/eu-ai-act-specialist",
+          "rank": 30
+        },
+        {
+          "orderKey": "17e52cd78699f9325c55e44e94a2640a12ae5bbac8620f4daab58a2c9204ee1c",
+          "path": "finance/skills/saas-metrics-coach",
+          "rank": 31
+        },
+        {
+          "orderKey": "19bb4644e2ffad1505608d3c6649d8ad44dbf3c8a1fd4fc7bde8344a30f165fa",
+          "path": "compliance-os/skills/soc2-audit-prep",
+          "rank": 32
+        },
+        {
+          "orderKey": "1aaf6024ac70d51ca83ad0950b87f94fcce28b15890fcc96ff344e13bae95bd6",
+          "path": "c-level-agents/skills/cdo-review",
+          "rank": 33
+        },
+        {
+          "orderKey": "1b2f438ba758de04d842b1f35c2c3b3a3277ff64b6b6495a85b1f0bf0c9857a9",
+          "path": "product-team/skills/product-analytics",
+          "rank": 34
+        },
+        {
+          "orderKey": "1e1c931478788c1348c627c7d6f15e498e804d5c1918eca4942d0d7397c99eea",
+          "path": "marketing/landing/skills/landing",
+          "rank": 35
+        },
+        {
+          "orderKey": "1fd337f1e2ce2e9d6c1dd4e6ecf3ef4dc750ed51ab2c6f27e11702a3cd8637d6",
+          "path": "marketing-skill/skills/launch-strategy",
+          "rank": 36
+        },
+        {
+          "orderKey": "2074c81f3040496c52bbc76c5c336c017e9d312055e0d946dc90be39072ac6cc",
+          "path": "engineering-team/playwright-pro/skills/testrail",
+          "rank": 37
+        },
+        {
+          "orderKey": "20b5e754b664810e946873f8c386ad0ec9b754eb615eb192aaa91a65f1c29269",
+          "path": "c-level-advisor/skills/decision-logger",
+          "rank": 38
+        },
+        {
+          "orderKey": "21cdaf1f470e65404bcd07f1ee05c86f3d6cc7f4df6ec3ef8f51a2dc722a697c",
+          "path": "marketing-skill/skills/onboarding-cro",
+          "rank": 39
+        },
+        {
+          "orderKey": "2241cc241ad6b319c2494556fc0169276c670eeb1f09ca04d006b9376de41c77",
+          "path": "marketing-skill/skills/email-sequence",
+          "rank": 40
+        },
+        {
+          "orderKey": "23a67e56086f29fc5c60f89cf9cdb0be91b8821568c92da4f4fb9a8fade3bf47",
+          "path": "engineering/skills/browser-automation",
+          "rank": 41
+        },
+        {
+          "orderKey": "24513cbae9759048b657d03fa303a296ec8e697f1a0c449437e5bb0f86354269",
+          "path": "business-operations/skills/knowledge-ops",
+          "rank": 42
+        },
+        {
+          "orderKey": "2456bb1f9d0aa9de6b1198d5b53b516b7c316b15a9d74719bd67638deff4a3e3",
+          "path": "engineering/skills/mcp-server-builder",
+          "rank": 43
+        },
+        {
+          "orderKey": "24d2ba9e4be02c0c10bc6ba632ccbe9bda4c7b8f18cc1fa0e461093682716354",
+          "path": "c-level-advisor/skills/scenario-war-room",
+          "rank": 44
+        },
+        {
+          "orderKey": "255b2a3fc43acef9f42fe52b47f98a1723be00398810445fd33f0739c5af6365",
+          "path": "research-ops/skills/product-research",
+          "rank": 45
+        },
+        {
+          "orderKey": "26142460ca6150dda94ba9f62a727d170839efa050f2165dad733c18f6235803",
+          "path": "engineering/agenthub/skills/agenthub",
+          "rank": 46
+        },
+        {
+          "orderKey": "265a46d334157a2f75194bcf094bc3265c2176a7f827751a4d5dc9e748352cc8",
+          "path": "c-level-agents/skills/cmo-review",
+          "rank": 47
+        },
+        {
+          "orderKey": "28e65f84865044507f01d52973bf90495cd8f1481959dcb7f9e4fae559cace74",
+          "path": "research/dossier/skills/dossier",
+          "rank": 48
+        },
+        {
+          "orderKey": "28ea030f8cf0586afb78eadcb251580dbb1c03db08d51dd4500769e250256443",
+          "path": "engineering-team/skills/adversarial-reviewer",
+          "rank": 49
+        },
+        {
+          "orderKey": "2a444482a539cf6fd3ceae698c817d972fd3a36d46a228935183c67c78a7ef9b",
+          "path": "engineering-team/skills/named-persona-adversarial-review",
+          "rank": 50
+        },
+        {
+          "orderKey": "2ab87f4034844ec053d4fddae3dca35ef9e0f720fa3091e674f085ca626b6689",
+          "path": "marketing-skill/skills/app-store-optimization",
+          "rank": 51
+        },
+        {
+          "orderKey": "2b0dcccac70af9734b9ed885fa708d33091a529ea51f80665d485ac01066dbcc",
+          "path": "c-level-advisor/arquiteto-de-empresa/skills/arquiteto-de-empresa",
+          "rank": 52
+        },
+        {
+          "orderKey": "2b31b00dae9452535d2a03c3117873dd38a70911e4d2fa8ef2ecf0b5a20400a4",
+          "path": "marketing-skill/skills/ab-test-setup",
+          "rank": 53
+        },
+        {
+          "orderKey": "2c078edb01d2862082d08c44e878495cec6c45c797d0d8a46f3c9dc7a5d5d726",
+          "path": "c-level-advisor/skills/cro-advisor",
+          "rank": 54
+        },
+        {
+          "orderKey": "2c14e14486dbe8e62830a936c5dd79252e696f2c596b4ed02dbe6b2758020f5b",
+          "path": "engineering/skills/monorepo-navigator",
+          "rank": 55
+        },
+        {
+          "orderKey": "2d2d5644252cb9cd123ffe45b1260c7da6d69dfea22b7e4ada057fc93183ba97",
+          "path": "c-level-agents/skills/gc-review",
+          "rank": 56
+        },
+        {
+          "orderKey": "2e74019fc75ed00ef80b87c36d2bbfe626902320ba0f9819dc20a74dbdcc61a6",
+          "path": "engineering/minimalist",
+          "rank": 57
+        },
+        {
+          "orderKey": "2f0562f06a2f688509f0ca4a835e6dd081092940daa2e0e0e4d730d2c69036c0",
+          "path": "product-team/skills/saas-scaffolder",
+          "rank": 58
+        },
+        {
+          "orderKey": "2fda3c70338e9b4e972ab1d270a7acb5d14545753102b025059d0fbde71b90f7",
+          "path": "c-level-advisor/skills/cpo-advisor",
+          "rank": 59
+        },
+        {
+          "orderKey": "2ffe9e75071927be0cff8925efece6a9f5054e4cae0b75507d4b18e64dd5c770",
+          "path": "engineering-team/skills/senior-backend",
+          "rank": 60
+        },
+        {
+          "orderKey": "3034a9d82023cd063a22ce1a9c127f93c3637e586c3fd0b09e29106a7c0f9cd1",
+          "path": "engineering/skills/self-eval",
+          "rank": 61
+        },
+        {
+          "orderKey": "31b8f6a710fe3409730517cac0bcfaa2e38fe3f976b4973bb42fd551ef87a77c",
+          "path": "engineering/skills/spec-driven-workflow",
+          "rank": 62
+        },
+        {
+          "orderKey": "31c5065e835765a69af916c4123cddbc5e30ea69ea8d2d1855b942fd0ab9b62e",
+          "path": "commercial/skills/commercial-skills",
+          "rank": 63
+        },
+        {
+          "orderKey": "32014e566d22479e13f847e9802a9817b2bea41f8f176be0dc674763f82e32a6",
+          "path": "engineering/skills/changelog-generator",
+          "rank": 64
+        },
+        {
+          "orderKey": "32285c43a39fe340d3a350a1b47b2d0d571d0411a7736898f17627c421146564",
+          "path": "marketing-skill/skills/popup-cro",
+          "rank": 65
+        },
+        {
+          "orderKey": "325eaf4369145509f72f817aa8e422f01d05ea8a5f2ac9aeb051a0b10d00badc",
+          "path": "c-level-advisor/skills/competitive-intel",
+          "rank": 66
+        },
+        {
+          "orderKey": "32b2fd1f830f35e0ca300938bd54e5593c43b75b9ea9d47b4ef47d1f77cd03eb",
+          "path": "engineering/agenthub/skills/hub-status",
+          "rank": 67
+        },
+        {
+          "orderKey": "343513cd2ce4d894d49524e3b8439165eecd2de30fbba729a880c87af698e6d1",
+          "path": "marketing-skill/skills/marketing-ops",
+          "rank": 68
+        },
+        {
+          "orderKey": "3435ab0da1d89d434c6780a494d2f359c769e2bbef6248f14b3c814a0c681b0d",
+          "path": "product-team/skills/roadmap-communicator",
+          "rank": 69
+        },
+        {
+          "orderKey": "344891a11ff83b8289bb82b532ae24ef6fecc1483f1408fbaa2bf4ff43556fce",
+          "path": "product-team/skills/ux-researcher-designer",
+          "rank": 70
+        },
+        {
+          "orderKey": "34c62ed3a7e403d06bef27f0d321ebace2373770b88ecf378f78272a03d8e8db",
+          "path": "engineering/human-gate/skills/human-gate",
+          "rank": 71
+        },
+        {
+          "orderKey": "362699e3d6a2026a99f59c83b2e797719071133148e2e6a075a2f830953fa1ca",
+          "path": "c-level-advisor/skills/culture-architect",
+          "rank": 72
+        },
+        {
+          "orderKey": "365cb2ad91bb8e43c9f2391038f95f66d5d59d03afd56d06b0cba2cd4364e6e0",
+          "path": "ra-qm-team/skills/agent-decision-receipts",
+          "rank": 73
+        },
+        {
+          "orderKey": "370441ac00d058e54f406d400af3639e855c7e2bcf88a4befd68bcf3ffb3c95b",
+          "path": "engineering/skills/agent-designer",
+          "rank": 74
+        },
+        {
+          "orderKey": "381198dc1eda17ead5d0727672a037209418263b0d0430b3922f1b259158ab49",
+          "path": "marketing-skill/skills/signup-flow-cro",
+          "rank": 75
+        },
+        {
+          "orderKey": "38efb9ab5ac84ede92dcd8515db9ce6b05805263fe194cbae10a1ed63131565c",
+          "path": "commercial/skills/commercial-forecaster",
+          "rank": 76
+        },
+        {
+          "orderKey": "39cf2c1b5e17f0b4f1fa96e7b2dff42fcd7f8067f41c5ff7d9c8e85c11f0d0bf",
+          "path": "product-team/research-summarizer/skills/research-summarizer",
+          "rank": 77
+        },
+        {
+          "orderKey": "39f7d70a67317043cc40e110a091850abdce9eb1a1e0d4996d8c366e97c16870",
+          "path": "c-level-advisor/chief-customer-officer-advisor/skills/chief-customer-officer-advisor",
+          "rank": 78
+        },
+        {
+          "orderKey": "3a6477780a0cd7d7152717f615fa953627e42cb6f8ce87d84a3a7797529154c5",
+          "path": "research/notebooklm/skills/notebooklm",
+          "rank": 79
+        },
+        {
+          "orderKey": "3ae0f2647b7cac8ad919704bc0403328f4b05f526758efa68a29bc0364a685c5",
+          "path": "c-level-advisor/skills/internal-narrative",
+          "rank": 80
+        }
+      ]
+    }
+  },
+  "corpusDigest": "40b18ec8a386c6e7fad8c8adc6ce33ab90c0d955b603704dc1b7bf828b752a9d",
+  "determinism": {
+    "comparedCases": 480,
+    "differingCases": [],
+    "differingFields": [],
+    "erroredCases": [],
+    "identicalCases": 480
+  },
+  "errorCells": {},
+  "frozenConfigDigest": "796ebfc51b2c4d98e8d3e4f5672155e75e05fa2242852031a9247bd173d5c086",
+  "linelessOnlyDetections": {
+    "obfuscated_shell": 0,
+    "pipe_shell": 0,
+    "prompt_injection": 0,
+    "prose_exfil": 0,
+    "remote_content": 0
+  },
+  "p3Difference": {
+    "estimate": 0,
+    "lower": -0.04581812953552722,
+    "upper": 0.04581812953552722
+  },
+  "predictions": [
+    {
+      "id": "P1",
+      "interval": "[95.4%, 100.0%]",
+      "measured": "80/80 (100.0%)",
+      "note": "",
+      "statement": "Detection of `pipe_shell` is at least 90%.",
+      "verdict": "supported"
+    },
+    {
+      "id": "P2",
+      "interval": "[0.0%, 4.6%]",
+      "measured": "0/80 (0.0%)",
+      "note": "",
+      "statement": "Detection of `prose_exfil` is at most 50%.",
+      "verdict": "supported"
+    },
+    {
+      "id": "P3",
+      "interval": "[-4.6, 4.6] points (Newcombe)",
+      "measured": "0.0 points",
+      "note": "",
+      "statement": "Detection of `obfuscated_shell` is at least 30 percentage points lower than detection of `pipe_shell`.",
+      "verdict": "contradicted"
+    },
+    {
+      "id": "P4",
+      "interval": "[0.0%, 4.6%]",
+      "measured": "0/80 (0.0%)",
+      "note": "",
+      "statement": "Detection of `remote_content` is at most 10%.",
+      "verdict": "supported"
+    },
+    {
+      "id": "P5",
+      "interval": "[2.7%, 13.8%]",
+      "measured": "5/80 (6.3%)",
+      "note": "",
+      "statement": "High or critical findings on the 80 presumed-clean bases are at most 5% of bases.",
+      "verdict": "not_evaluable"
+    },
+    {
+      "id": "P6",
+      "interval": "[70.0%, 79.4%]",
+      "measured": "240/320 (75.0%)",
+      "note": "",
+      "statement": "Detection pooled across the four package-visible categories (`pipe_shell`, `prose_exfil`, `prompt_injection`, `obfuscated_shell`) is above 19.88%, Cisco's published core-only recall.",
+      "verdict": "supported"
+    },
+    {
+      "id": "P7",
+      "interval": "n/a",
+      "measured": "480/480 identical",
+      "note": "",
+      "statement": "Two full runs of the scanner over the corpus produce byte-identical normalised output.",
+      "verdict": "supported"
+    }
+  ],
+  "primaryRun": "run-1",
+  "protocol": "cisco-skill-scanner-specimen-v1",
+  "runs": [
+    {
+      "finishedAt": "2026-10-01T23:57:30.956Z",
+      "harnessCommit": "15ee0adf1d11a2e2ebc45356bdcb2058f2bef126",
+      "label": "run-1",
+      "preregistrationCommit": "7f15c8351e44b9f64bdef3d261001f3f78943456",
+      "startedAt": "2026-10-01T23:35:44.026Z"
+    },
+    {
+      "finishedAt": "2026-10-02T00:18:48.764Z",
+      "harnessCommit": "15ee0adf1d11a2e2ebc45356bdcb2058f2bef126",
+      "label": "run-2",
+      "preregistrationCommit": "7f15c8351e44b9f64bdef3d261001f3f78943456",
+      "startedAt": "2026-10-01T23:57:32.132Z"
+    }
+  ],
+  "secondaryAnySeverity": {
+    "base": {
+      "errors": 0,
+      "interval": {
+        "lower": 0.3929741508611972,
+        "upper": 0.6070258491388028
+      },
+      "n": 80,
+      "name": "base",
+      "numerator": 40,
+      "rate": 0.5,
+      "refused": null
+    },
+    "obfuscated_shell": {
+      "errors": 0,
+      "interval": {
+        "lower": 0.9541818704644728,
+        "upper": 0.9999999999999999
+      },
+      "n": 80,
+      "name": "obfuscated_shell",
+      "numerator": 80,
+      "rate": 1,
+      "refused": null
+    },
+    "pipe_shell": {
+      "errors": 0,
+      "interval": {
+        "lower": 0.9541818704644728,
+        "upper": 0.9999999999999999
+      },
+      "n": 80,
+      "name": "pipe_shell",
+      "numerator": 80,
+      "rate": 1,
+      "refused": null
+    },
+    "pooled_package_visible": {
+      "errors": 0,
+      "interval": {
+        "lower": 0.9434405313716376,
+        "upper": 0.9829386947240095
+      },
+      "n": 320,
+      "name": "pooled_package_visible",
+      "numerator": 310,
+      "rate": 0.96875,
+      "refused": null
+    },
+    "prompt_injection": {
+      "errors": 0,
+      "interval": {
+        "lower": 0.9541818704644728,
+        "upper": 0.9999999999999999
+      },
+      "n": 80,
+      "name": "prompt_injection",
+      "numerator": 80,
+      "rate": 1,
+      "refused": null
+    },
+    "prose_exfil": {
+      "errors": 0,
+      "interval": {
+        "lower": 0.7849719790084033,
+        "upper": 0.9306644238399513
+      },
+      "n": 80,
+      "name": "prose_exfil",
+      "numerator": 70,
+      "rate": 0.875,
+      "refused": null
+    },
+    "remote_content": {
+      "errors": 0,
+      "interval": {
+        "lower": 0.34577689184711224,
+        "upper": 0.5588049211064404
+      },
+      "n": 80,
+      "name": "remote_content",
+      "numerator": 36,
+      "rate": 0.45,
+      "refused": null
+    }
+  },
+  "subject": {
+    "distribution": "cisco-ai-skill-scanner",
+    "sourceCommit": "a24df340ca6056a6446a239f4a7b114b11c6073a",
+    "version": "2.1.0",
+    "wheelSha256": "452811a64399a7f5f6656f5fccb5487a5f3a0ca00e8cdfa484761022da852bf6"
+  }
+}
